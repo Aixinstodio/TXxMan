@@ -4,8 +4,9 @@ export tswb=""   ##自定义变量 自定义发送的文本内容 如 老弟 你
 // [task_local]
 // */60 * * * *
 // 自己复制定时
+//脚本来源未知
 
-const $ = new Env('失效CK检测');
+const $ = new Env('失效Ck检测');
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
